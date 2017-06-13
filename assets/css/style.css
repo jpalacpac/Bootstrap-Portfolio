@@ -8,8 +8,12 @@ body {
     margin: 0 0 100px; 
 }
 
+form {
+  margin-bottom: 15px;
+}
+
 footer {
-	padding-top: 15px;
+	  padding-top: 15px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -21,10 +25,12 @@ h1 {
     color: #4aaaa5;
     font-size: 36px;
     font-weight: bold;
+    margin: 15px;
     border-bottom: 3px solid #ddd;
 }
 
 h2 {
+    color: white;
     font-size: 28px;
 }
 
@@ -32,11 +38,27 @@ h3 {
     color: #4aaaa5;
     font-weight: bold;
     font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ddd;
+    text-align: center;
 }
 
-    .bg-4 { 
-      background-color: #666;
-      color: white;
+h4 {
+    font-size: 24px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-6 {
+  margin-bottom: 15px;
+}
+
+.bg-4 { 
+background-color: #666;
+color: white;
   }
 
   .whitebg {
@@ -47,15 +69,26 @@ h3 {
 
   }
 
-/*.work {
+  .wrapper {
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+
+  .navbar {
+    background: white;
+    border-bottom: 3px solid #ddd;
+  }
+
+  .navbar-brand {
+    background: #4aaaa5;
+  }
+
+.work {
   position: relative;
-  float: left;
-  width: 100%;
-  margin: 20px 0 25px;
-  overflow: auto;
 }
 
-.work h4 {
+.work2 {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -67,4 +100,37 @@ h3 {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-}*/
+}
+
+.container-fluid {
+  border-top: 5px solid #4aaaa5;
+}
+
+.panel-body {
+  border: 1px solid #ddd;
+}
+
+.img-thumbnail {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+
+}
+
+.page-header {
+  border-bottom: 0px;
+}
+
+/*Phone View*/
+@media only screen and (max-width: 680px) {
+
+  .img-thumbnail {
+  width: 100%;
+  max-width: 75px;
+  height: auto;
+  margin: 10px;
+}
+
+}
